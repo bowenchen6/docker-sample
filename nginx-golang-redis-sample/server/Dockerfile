@@ -1,6 +1,6 @@
 # Start from a Debian image with the latest version of Go installed
 # and a workspace (GOPATH) configured at /go.
-FROM golang
+FROM registry.cn-hangzhou.aliyuncs.com/bowen/base-ubuntu:test-golang
 
 RUN go get -u github.com/garyburd/redigo/redis
 RUN go get -u github.com/gorilla/mux
